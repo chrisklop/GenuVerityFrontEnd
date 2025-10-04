@@ -54,11 +54,11 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <div className="min-h-screen flex flex-col items-center justify-center px-4 bg-background">
+      {/* Header Navigation */}
       <Navigation />
 
-      <div className="flex-1 flex items-center justify-center px-4">
-        <div className="w-full max-w-2xl mx-auto text-center">
+      <div className="w-full max-w-2xl mx-auto text-center -mt-[200px]">
         {/* Logo Section */}
         <div className="mb-6">
           <img 

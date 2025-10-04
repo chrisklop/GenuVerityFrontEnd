@@ -6,9 +6,9 @@ import { Navigation } from '../components/Navigation';
 export default function ThankYou() {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation showBackButton={true} />
+      <Navigation />
 
-      <div className="container mx-auto px-4 py-16 max-w-2xl text-center">
+      <div className="container mx-auto px-4 pt-24 pb-16 max-w-2xl text-center">
         <div className="mb-8">
           <div className="mx-auto w-16 h-16 bg-green-100 dark:bg-green-900/20 rounded-full flex items-center justify-center mb-6">
             <CheckCircle className="h-8 w-8 text-green-500" />

@@ -4,9 +4,9 @@ import { Navigation } from '../components/Navigation';
 export default function HowItWorks() {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation showBackButton={true} />
+      <Navigation />
 
-      <div className="container mx-auto px-4 py-16 max-w-4xl">
+      <div className="container mx-auto px-4 pt-24 pb-16 max-w-4xl">
         <h1 className="mb-8 text-center">How GenuVerity Works</h1>
         
         <div className="space-y-12">

@@ -1,12 +1,13 @@
+import { Link } from 'react-router-dom';
 import { Target, Users, Shield, Lightbulb } from 'lucide-react';
 import { Navigation } from '../components/Navigation';
 
 export default function Mission() {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation showBackButton={true} />
+      <Navigation />
 
-      <div className="container mx-auto px-4 py-16 max-w-4xl">
+      <div className="container mx-auto px-4 pt-24 pb-16 max-w-4xl">
         <div className="text-center mb-16">
           <h1 className="mb-6">Our Mission</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
