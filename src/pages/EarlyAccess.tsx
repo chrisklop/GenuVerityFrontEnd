@@ -71,34 +71,34 @@ export default function EarlyAccess() {
 
       <div className="container mx-auto px-4 py-16 max-w-2xl">
         <div className="text-center mb-12">
-          <h1 className="mb-4">Sign Up for Early Access</h1>
+          <h1 className="mb-4">Join the GenuVerity Beta</h1>
           <p className="text-lg text-muted-foreground">
-            Be among the first to experience AI-powered fact-checking with GenuVerity
+            Help shape the future of AI-powered fact-checking by joining our beta testing program
           </p>
         </div>
 
         <div className="bg-card border border-border rounded-lg p-8 mb-8">
-          <h3 className="mb-6">What You'll Get</h3>
+          <h3 className="mb-6">Beta Tester Benefits</h3>
           <ul className="space-y-3 text-muted-foreground">
             <li className="flex items-start gap-2">
               <span className="text-green-500 mt-1">✓</span>
-              <span>Priority access to GenuVerity platform</span>
+              <span>Exclusive access to beta platform features</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-green-500 mt-1">✓</span>
-              <span>Extended free trial with unlimited queries</span>
+              <span>Extended free trial with generous query limits</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-green-500 mt-1">✓</span>
-              <span>Direct input on feature development</span>
+              <span>Direct influence on product development</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-green-500 mt-1">✓</span>
-              <span>Special early adopter pricing</span>
+              <span>Beta tester recognition and special pricing</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-green-500 mt-1">✓</span>
-              <span>API access for developers</span>
+              <span>Early API access for technical feedback</span>
             </li>
           </ul>
         </div>
@@ -153,12 +153,12 @@ export default function EarlyAccess() {
 
           <div className="space-y-2">
             <Label htmlFor="useCase">
-              How do you plan to use GenuVerity? (Optional)
+              What would you like to help us test? (Optional)
             </Label>
             <Textarea
               id="useCase"
               name="useCase"
-              placeholder="e.g., Researching medical claims, verifying news articles, educational purposes..."
+              placeholder="e.g., Medical fact-checking accuracy, news verification speed, educational use cases, API integration..."
               rows={4}
               value={formData.useCase}
               onChange={handleChange}
@@ -166,11 +166,11 @@ export default function EarlyAccess() {
           </div>
 
           <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
-            {isSubmitting ? 'Submitting...' : 'Request Early Access'}
+            {isSubmitting ? 'Submitting...' : 'Join Beta Testing'}
           </Button>
 
           <p className="text-xs text-center text-muted-foreground">
-            By signing up, you agree to receive occasional updates about GenuVerity. 
+            By joining our beta, you agree to provide feedback and receive updates about GenuVerity. 
             We respect your privacy and will never share your information.
           </p>
         </form>

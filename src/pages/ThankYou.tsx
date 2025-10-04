@@ -81,7 +81,7 @@ export default function ThankYou() {
             </div>
             <div className="flex items-center gap-3">
               <span className="text-primary">📧</span>
-              <span className="text-muted-foreground">Follow us for updates on development progress</span>
+              <span className="text-muted-foreground">Join our beta community for updates and testing coordination</span>
             </div>
           </div>
         </div>

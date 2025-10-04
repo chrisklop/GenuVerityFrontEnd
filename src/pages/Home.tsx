@@ -68,7 +68,7 @@ export default function Home() {
             to="/early-access" 
             className="text-sm text-foreground/70 hover:text-foreground transition-colors"
           >
-            Sign up for early access
+            Join Beta Testing
           </Link>
           <Link 
             to="/mission" 
