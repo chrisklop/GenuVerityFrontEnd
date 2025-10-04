@@ -48,17 +48,17 @@
 .dark {
   /* Bright burnt orange dark mode theme */
   --background: #d2562d;
-  --foreground: #1a0f08;
+  --foreground: #ffffff;
   --card: #e66a3c;
-  --card-foreground: #1a0f08;
+  --card-foreground: #ffffff;
   --popover: #e66a3c;
-  --popover-foreground: #1a0f08;
-  --primary: #1a0f08;
-  --primary-foreground: #ffffff;
+  --popover-foreground: #ffffff;
+  --primary: #ffffff;
+  --primary-foreground: #d2562d;
   --secondary: #b8481f;
   --secondary-foreground: #ffffff;
   --muted: #b8481f;
-  --muted-foreground: #3d2817;
+  --muted-foreground: #f5f5f5;
   --accent: #a03e18;
   --accent-foreground: #ffffff;
   --destructive: #991b1b;
