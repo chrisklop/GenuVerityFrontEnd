@@ -92,7 +92,7 @@ export default function Principles() {
             </h2>
             <div className="grid gap-6">
               
-              <div className="bg-card border border-border rounded-lg p-6 border-l-4 border-l-orange-500">
+              <div className="bg-card border border-border rounded-lg p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="p-2 bg-orange-500/10 rounded-lg">
                     <CheckCircle className="h-5 w-5 text-orange-500" />
@@ -114,7 +114,7 @@ export default function Principles() {
                 </div>
               </div>
 
-              <div className="bg-card border border-border rounded-lg p-6 border-l-4 border-l-blue-500">
+              <div className="bg-card border border-border rounded-lg p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="p-2 bg-blue-500/10 rounded-lg">
                     <Eye className="h-5 w-5 text-blue-500" />
@@ -136,7 +136,7 @@ export default function Principles() {
                 </div>
               </div>
 
-              <div className="bg-card border border-border rounded-lg p-6 border-l-4 border-l-purple-500">
+              <div className="bg-card border border-border rounded-lg p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="p-2 bg-purple-500/10 rounded-lg">
                     <Users className="h-5 w-5 text-purple-500" />
@@ -158,7 +158,7 @@ export default function Principles() {
                 </div>
               </div>
 
-              <div className="bg-card border border-border rounded-lg p-6 border-l-4 border-l-green-500">
+              <div className="bg-card border border-border rounded-lg p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="p-2 bg-green-500/10 rounded-lg">
                     <Target className="h-5 w-5 text-green-500" />
@@ -180,7 +180,7 @@ export default function Principles() {
                 </div>
               </div>
 
-              <div className="bg-card border border-border rounded-lg p-6 border-l-4 border-l-red-500">
+              <div className="bg-card border border-border rounded-lg p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="p-2 bg-red-500/10 rounded-lg">
                     <RefreshCw className="h-5 w-5 text-red-500" />
