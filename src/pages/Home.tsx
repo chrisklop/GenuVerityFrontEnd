@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { Input } from '../components/ui/input';
 import { Button } from '../components/ui/button';
 import { Search, Paperclip } from 'lucide-react';
@@ -64,8 +64,8 @@ export default function Home() {
           {/* Development Notice */}
           <div className="mb-6 bg-accent/50 border border-border rounded-lg p-4 max-w-lg mx-auto">
             <p className="text-sm text-foreground/80">
-              <strong>Demo Mode:</strong> Try searching below to see GenuVerity's AI fact-checking in action. 
-              Sign up for beta access to get notified when we launch.
+              <strong>Demo Mode:</strong> Any search will show sample fact-checking results, demonstrating GenuVerity's AI analysis capabilities before launch. 
+              Sign up for the beta <Link to="/early-access" className="text-primary hover:underline">here</Link>.
             </p>
           </div>
 
