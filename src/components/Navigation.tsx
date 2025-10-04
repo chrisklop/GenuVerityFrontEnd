@@ -7,14 +7,8 @@ export function Navigation() {
     <header className="fixed top-0 left-0 right-0 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border z-50">
       <div className="container mx-auto px-4 py-3">
         <nav className="flex items-center justify-between">
-          {/* Logo - left side */}
-          <Link to="/" className="flex items-center">
-            <img 
-              src={genuverityLogo} 
-              alt="GenuVerity" 
-              className="h-6 w-auto"
-            />
-        </Link>
+          {/* Empty left side - logo removed */}
+          <div></div>
 
         {/* Navigation links and theme toggle - right side */}
         <div className="flex items-center gap-6">
@@ -28,7 +22,7 @@ export function Navigation() {
             to="/early-access" 
             className="text-sm text-foreground/70 hover:text-foreground transition-colors"
           >
-            Join Beta Testing
+            Beta
           </Link>
           <Link 
             to="/mission" 
