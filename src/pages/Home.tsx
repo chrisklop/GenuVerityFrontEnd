@@ -54,11 +54,13 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 bg-background">
+    <div className="min-h-screen bg-background">
       {/* Header Navigation */}
       <Navigation />
 
-      <div className="w-full max-w-2xl mx-auto text-center -mt-[200px]">
+      {/* Hero Section - Main content */}
+      <div className="flex items-center justify-center min-h-screen px-4">
+        <div className="w-full max-w-2xl mx-auto text-center">
         {/* Logo Section */}
         <div className="mb-6">
           <img 
@@ -98,9 +100,10 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Footer */}
-        <div className="pt-8 text-sm text-muted-foreground">
-          <p>Trusted sources • Verified claims • Deeper insights</p>
+          {/* Footer */}
+          <div className="pt-8 text-sm text-muted-foreground">
+            <p>Trusted sources • Verified claims • Deeper insights</p>
+          </div>
         </div>
       </div>
     </div>

@@ -4,15 +4,16 @@ import genuverityLogo from 'figma:asset/7a1c97674e5167dc2d9474d7d02423e43c5e10fe
 
 export function Navigation() {
   return (
-    <header className="absolute top-0 left-0 right-0 p-6 z-10">
-      <nav className="flex items-center justify-between">
-        {/* Logo - left side */}
-        <Link to="/" className="flex items-center">
-          <img 
-            src={genuverityLogo} 
-            alt="GenuVerity" 
-            className="h-12 w-auto"
-          />
+    <header className="fixed top-0 left-0 right-0 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border z-50">
+      <div className="container mx-auto px-4 py-3">
+        <nav className="flex items-center justify-between">
+          {/* Logo - left side */}
+          <Link to="/" className="flex items-center">
+            <img 
+              src={genuverityLogo} 
+              alt="GenuVerity" 
+              className="h-6 w-auto"
+            />
         </Link>
 
         {/* Navigation links and theme toggle - right side */}
@@ -43,7 +44,8 @@ export function Navigation() {
           </Link>
           <ThemeToggle />
         </div>
-      </nav>
+        </nav>
+      </div>
     </header>
   );
 }

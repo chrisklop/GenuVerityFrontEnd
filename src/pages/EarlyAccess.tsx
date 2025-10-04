@@ -61,7 +61,7 @@ export default function EarlyAccess() {
     <div className="min-h-screen bg-background">
       <Navigation />
 
-      <div className="container mx-auto px-4 pt-24 pb-16 max-w-2xl">
+      <div className="container mx-auto px-4 pt-20 pb-16 max-w-2xl">
         <div className="text-center mb-12">
           <h1 className="mb-4">Join the GenuVerity Beta</h1>
           <p className="text-lg text-muted-foreground">
