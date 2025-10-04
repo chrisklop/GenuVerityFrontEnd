@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Results from './pages/Results';
 import HowItWorks from './pages/HowItWorks';
 import Mission from './pages/Mission';
+import Principles from './pages/Principles';
 import EarlyAccess from './pages/EarlyAccess';
 import NotFound from './pages/NotFound';
 
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="/verify/:id" element={<Results />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/mission" element={<Mission />} />
+          <Route path="/principles" element={<Principles />} />
           <Route path="/early-access" element={<EarlyAccess />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

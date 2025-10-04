@@ -56,6 +56,12 @@ export default function Home() {
           >
             Our Mission
           </Link>
+          <Link 
+            to="/principles" 
+            className="text-sm text-foreground/70 hover:text-foreground transition-colors"
+          >
+            Our Principles
+          </Link>
           <ThemeToggle />
         </nav>
       </header>
