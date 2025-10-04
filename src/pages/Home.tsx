@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { Input } from '../components/ui/input';
 import { Button } from '../components/ui/button';
@@ -6,9 +6,29 @@ import { Search, Paperclip } from 'lucide-react';
 import { ThemeToggle } from '../components/ThemeToggle';
 import genuverityLogo from 'figma:asset/7a1c97674e5167dc2d9474d7d02423e43c5e10fe.png';
 
+const placeholderStatements = [
+  "Press 'Find the Truth' to experience the future of AI-powered fact-checking",
+  "Try AI constitutional fact-checking - enter any claim to see how we verify truth",
+  "Discover how Constitutional AI separates fact from fiction - test any statement",
+  "See the next generation of fact-checking in action - verify any claim instantly",
+  "Experience transparent, AI-driven verification - enter a statement to begin",
+  "Watch Constitutional AI fact-check claims with unprecedented accuracy",
+  "Coffee is bad for your health - press Find the Truth to see our methodology",
+  "The Great Wall of China is visible from space - test our AI fact-checker",
+  "Vaccines cause autism - see how we use evidence-based AI verification",
+  "Climate change is a hoax - experience unbiased AI-powered fact-checking"
+];
+
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
+  const [placeholder, setPlaceholder] = useState('');
   const navigate = useNavigate();
+
+  useEffect(() => {
+    // Set a random placeholder on component mount
+    const randomIndex = Math.floor(Math.random() * placeholderStatements.length);
+    setPlaceholder(placeholderStatements[randomIndex]);
+  }, []);
 
   const handleSearch = () => {
     // Navigate to results page with the query
@@ -87,7 +107,7 @@ export default function Home() {
             </div>
             <Input
               type="text"
-              placeholder="Enter a claim or statement to verify..."
+              placeholder={placeholder}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               onKeyPress={handleKeyPress}
