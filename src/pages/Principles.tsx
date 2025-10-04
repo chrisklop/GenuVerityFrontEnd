@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { ArrowLeft, CheckCircle, Target, Shield, Eye, Users, RefreshCw } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { ThemeToggle } from '../components/ThemeToggle';
 
@@ -30,14 +29,14 @@ export default function Principles() {
           </Badge>
         </div>
 
-        <Card className="mb-8 border-l-4 border-l-primary">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Target className="h-6 w-6 text-primary" />
-              Our Mission
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
+        <div className="space-y-12">
+          <section className="bg-card border border-border rounded-lg p-8">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="p-2 bg-primary/10 rounded-lg">
+                <Target className="h-6 w-6 text-primary" />
+              </div>
+              <h2>Our Mission</h2>
+            </div>
             <p className="text-muted-foreground leading-relaxed">
               GenuVerity is committed to becoming a premier fact-checking platform that meets and exceeds 
               the rigorous standards set by the International Fact-Checking Network (IFCN). We understand 
@@ -46,40 +45,38 @@ export default function Principles() {
               verified signatory status at launch, demonstrating our unwavering commitment to accuracy, 
               transparency, and non-partisan excellence.
             </p>
-          </CardContent>
-        </Card>
+          </section>
 
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Shield className="h-6 w-6 text-primary" />
-              Why IFCN Certification Matters
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
+          <section className="bg-card border border-border rounded-lg p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-2 bg-primary/10 rounded-lg">
+                <Shield className="h-6 w-6 text-primary" />
+              </div>
+              <h2>Why IFCN Certification Matters</h2>
+            </div>
             <div className="grid md:grid-cols-2 gap-6">
-              <div>
+              <div className="bg-card border border-border rounded-lg p-6">
                 <h4 className="font-semibold mb-2">Trust & Credibility</h4>
                 <p className="text-muted-foreground text-sm">
                   IFCN verification is recognized globally as the gold standard for fact-checking organizations, 
                   providing users with confidence in our methodology and findings.
                 </p>
               </div>
-              <div>
+              <div className="bg-card border border-border rounded-lg p-6">
                 <h4 className="font-semibold mb-2">Platform Integration</h4>
                 <p className="text-muted-foreground text-sm">
                   Major platforms like Facebook require IFCN verification for their third-party fact-checking 
                   programs, expanding our reach and impact.
                 </p>
               </div>
-              <div>
+              <div className="bg-card border border-border rounded-lg p-6">
                 <h4 className="font-semibold mb-2">Accountability</h4>
                 <p className="text-muted-foreground text-sm">
                   The rigorous assessment process ensures we maintain the highest standards and can be 
                   held accountable by users and peers.
                 </p>
               </div>
-              <div>
+              <div className="bg-card border border-border rounded-lg p-6">
                 <h4 className="font-semibold mb-2">Global Network</h4>
                 <p className="text-muted-foreground text-sm">
                   Joining a network of 170+ verified organizations worldwide, sharing best practices 
@@ -87,23 +84,21 @@ export default function Principles() {
                 </p>
               </div>
             </div>
-          </CardContent>
-        </Card>
+          </section>
 
-        <div className="mb-8">
-          <h2 className="text-2xl font-bold mb-6 text-center">
-            Our Five Core Principles
-          </h2>
-          <div className="grid gap-6">
-            
-            <Card className="border-l-4 border-l-orange-500">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <CheckCircle className="h-5 w-5 text-orange-500" />
-                  1. Non-partisanship and Fairness
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
+          <section>
+            <h2 className="text-2xl font-bold mb-6 text-center">
+              Our Five Core Principles
+            </h2>
+            <div className="grid gap-6">
+              
+              <div className="bg-card border border-border rounded-lg p-6 border-l-4 border-l-orange-500">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="p-2 bg-orange-500/10 rounded-lg">
+                    <CheckCircle className="h-5 w-5 text-orange-500" />
+                  </div>
+                  <h3>1. Non-partisanship and Fairness</h3>
+                </div>
                 <p className="text-muted-foreground mb-4">
                   We apply the same rigorous standards of evidence to all claims, regardless of their source. 
                   Our fact-checking process is guided solely by evidence, not political affiliation or bias.
@@ -117,17 +112,15 @@ export default function Principles() {
                     <li>• Clear disclosure of any potential conflicts of interest</li>
                   </ul>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
 
-            <Card className="border-l-4 border-l-blue-500">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Eye className="h-5 w-5 text-blue-500" />
-                  2. Standards and Transparency of Sources
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
+              <div className="bg-card border border-border rounded-lg p-6 border-l-4 border-l-blue-500">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="p-2 bg-blue-500/10 rounded-lg">
+                    <Eye className="h-5 w-5 text-blue-500" />
+                  </div>
+                  <h3>2. Standards and Transparency of Sources</h3>
+                </div>
                 <p className="text-muted-foreground mb-4">
                   We provide comprehensive source documentation to enable users to verify our work independently. 
                   Our commitment to transparency builds trust through verifiability.
@@ -141,17 +134,15 @@ export default function Principles() {
                     <li>• Clear identification of source interests and potential biases</li>
                   </ul>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
 
-            <Card className="border-l-4 border-l-purple-500">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Users className="h-5 w-5 text-purple-500" />
-                  3. Transparency of Funding & Organization
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
+              <div className="bg-card border border-border rounded-lg p-6 border-l-4 border-l-purple-500">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="p-2 bg-purple-500/10 rounded-lg">
+                    <Users className="h-5 w-5 text-purple-500" />
+                  </div>
+                  <h3>3. Transparency of Funding & Organization</h3>
+                </div>
                 <p className="text-muted-foreground mb-4">
                   We maintain complete transparency about our organizational structure, funding sources, 
                   and editorial processes to ensure accountability and trust.
@@ -165,17 +156,15 @@ export default function Principles() {
                     <li>• Accessible communication channels for users</li>
                   </ul>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
 
-            <Card className="border-l-4 border-l-green-500">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Target className="h-5 w-5 text-green-500" />
-                  4. Standards and Transparency of Methodology
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
+              <div className="bg-card border border-border rounded-lg p-6 border-l-4 border-l-green-500">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="p-2 bg-green-500/10 rounded-lg">
+                    <Target className="h-5 w-5 text-green-500" />
+                  </div>
+                  <h3>4. Standards and Transparency of Methodology</h3>
+                </div>
                 <p className="text-muted-foreground mb-4">
                   We maintain the highest professional standards and provide clear explanations of our 
                   fact-checking methodology, from claim selection to final verdict.
@@ -189,17 +178,15 @@ export default function Principles() {
                     <li>• Contact with claim makers when possible</li>
                   </ul>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
 
-            <Card className="border-l-4 border-l-red-500">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <RefreshCw className="h-5 w-5 text-red-500" />
-                  5. Open & Honest Corrections Policy
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
+              <div className="bg-card border border-border rounded-lg p-6 border-l-4 border-l-red-500">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="p-2 bg-red-500/10 rounded-lg">
+                    <RefreshCw className="h-5 w-5 text-red-500" />
+                  </div>
+                  <h3>5. Open & Honest Corrections Policy</h3>
+                </div>
                 <p className="text-muted-foreground mb-4">
                   We are committed to accuracy above all else and maintain a transparent corrections 
                   policy to address any errors promptly and openly.
@@ -213,29 +200,23 @@ export default function Principles() {
                     <li>• User notification systems for corrections</li>
                   </ul>
                 </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
+              </div>
+            </div>
+          </section>
 
-        <Card className="bg-card border border-border">
-          <CardHeader>
-            <CardTitle className="text-center">
-              Our Commitment to Excellence
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="text-center">
-            <p className="text-muted-foreground mb-4">
+          <section className="bg-card border border-border rounded-lg p-8">
+            <h2 className="text-center mb-4">Our Commitment to Excellence</h2>
+            <p className="text-muted-foreground mb-4 text-center">
               GenuVerity is built from the ground up to meet IFCN standards. Every feature, process, 
               and policy is designed with these principles at its core. We believe that in an era of 
               information abundance, the public deserves fact-checking that is not just accurate, 
               but verifiably trustworthy.
             </p>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-muted-foreground text-center">
               <strong>Because trust, once lost, is nearly impossible to regain.</strong>
             </p>
-          </CardContent>
-        </Card>
+          </section>
+        </div>
 
         <div className="text-center mt-8 text-sm text-muted-foreground">
           <p>
