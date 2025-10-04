@@ -1,10 +1,10 @@
-import { Link, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Mail, User, Briefcase } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { Mail, User, Briefcase } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
 import { Label } from '../components/ui/label';
 import { Textarea } from '../components/ui/textarea';
-import { ThemeToggle } from '../components/ThemeToggle';
+import { Navigation } from '../components/Navigation';
 import { useState } from 'react';
 import { toast } from 'sonner';
 
@@ -59,15 +59,7 @@ export default function EarlyAccess() {
 
   return (
     <div className="min-h-screen bg-background">
-      <header className="border-b border-border">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity w-fit">
-            <ArrowLeft className="h-4 w-4" />
-            <span className="text-sm">Back to Home</span>
-          </Link>
-          <ThemeToggle />
-        </div>
-      </header>
+      <Navigation showBackButton={true} />
 
       <div className="container mx-auto px-4 py-16 max-w-2xl">
         <div className="text-center mb-12">

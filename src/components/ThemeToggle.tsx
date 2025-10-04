@@ -14,7 +14,7 @@ export function ThemeToggle() {
       aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
     >
       {theme === 'light' ? (
-        <span className="text-xl">🍊</span>
+        <span className="text-xl">🎃</span>
       ) : (
         <Sun className="h-5 w-5" />
       )}

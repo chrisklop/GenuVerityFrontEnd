@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { Input } from '../components/ui/input';
 import { Button } from '../components/ui/button';
 import { Search, Paperclip } from 'lucide-react';
-import { ThemeToggle } from '../components/ThemeToggle';
+import { Navigation } from '../components/Navigation';
 import genuverityLogo from 'figma:asset/7a1c97674e5167dc2d9474d7d02423e43c5e10fe.png';
 
 const placeholderStatements = [
@@ -54,39 +54,11 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 bg-background">
-      {/* Header Navigation */}
-      <header className="absolute top-0 right-0 p-6">
-        <nav className="flex items-center gap-6">
-          <Link 
-            to="/how-it-works" 
-            className="text-sm text-foreground/70 hover:text-foreground transition-colors"
-          >
-            How it Works
-          </Link>
-          <Link 
-            to="/early-access" 
-            className="text-sm text-foreground/70 hover:text-foreground transition-colors"
-          >
-            Join Beta Testing
-          </Link>
-          <Link 
-            to="/mission" 
-            className="text-sm text-foreground/70 hover:text-foreground transition-colors"
-          >
-            Our Mission
-          </Link>
-          <Link 
-            to="/principles" 
-            className="text-sm text-foreground/70 hover:text-foreground transition-colors"
-          >
-            Our Principles
-          </Link>
-          <ThemeToggle />
-        </nav>
-      </header>
+    <div className="min-h-screen flex flex-col bg-background">
+      <Navigation />
 
-      <div className="w-full max-w-2xl mx-auto text-center -mt-[200px]">
+      <div className="flex-1 flex items-center justify-center px-4">
+        <div className="w-full max-w-2xl mx-auto text-center">
         {/* Logo Section */}
         <div className="mb-6">
           <img 
@@ -126,9 +98,10 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Footer */}
-        <div className="pt-8 text-sm text-muted-foreground">
-          <p>Trusted sources • Verified claims • Deeper insights</p>
+          {/* Footer */}
+          <div className="pt-8 text-sm text-muted-foreground">
+            <p>Trusted sources • Verified claims • Deeper insights</p>
+          </div>
         </div>
       </div>
     </div>

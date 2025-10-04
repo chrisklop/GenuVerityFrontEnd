@@ -1,19 +1,10 @@
-import { Link } from 'react-router-dom';
-import { ArrowLeft, Target, Users, Shield, Lightbulb } from 'lucide-react';
-import { ThemeToggle } from '../components/ThemeToggle';
+import { Target, Users, Shield, Lightbulb } from 'lucide-react';
+import { Navigation } from '../components/Navigation';
 
 export default function Mission() {
   return (
     <div className="min-h-screen bg-background">
-      <header className="border-b border-border">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity w-fit">
-            <ArrowLeft className="h-4 w-4" />
-            <span className="text-sm">Back to Home</span>
-          </Link>
-          <ThemeToggle />
-        </div>
-      </header>
+      <Navigation showBackButton={true} />
 
       <div className="container mx-auto px-4 py-16 max-w-4xl">
         <div className="text-center mb-16">
