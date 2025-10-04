@@ -7,6 +7,7 @@ import HowItWorks from './pages/HowItWorks';
 import Mission from './pages/Mission';
 import Principles from './pages/Principles';
 import EarlyAccess from './pages/EarlyAccess';
+import ThankYou from './pages/ThankYou';
 import NotFound from './pages/NotFound';
 
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="/mission" element={<Mission />} />
           <Route path="/principles" element={<Principles />} />
           <Route path="/early-access" element={<EarlyAccess />} />
+          <Route path="/thank-you" element={<ThankYou />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Toaster />

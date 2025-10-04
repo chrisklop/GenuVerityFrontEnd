@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Mail, User, Briefcase } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
@@ -15,12 +15,39 @@ export default function EarlyAccess() {
     organization: '',
     useCase: '',
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const navigate = useNavigate();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In production, this would submit to an API
-    toast.success('Thanks for your interest! We\'ll be in touch soon.');
-    setFormData({ name: '', email: '', organization: '', useCase: '' });
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          organization: formData.organization,
+          useCase: formData.useCase,
+          _replyto: formData.email,
+        }),
+      });
+
+      if (response.ok) {
+        navigate('/thank-you');
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (error) {
+      toast.error('Something went wrong. Please try again or contact us directly.');
+      console.error('Form submission error:', error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -138,8 +165,8 @@ export default function EarlyAccess() {
             />
           </div>
 
-          <Button type="submit" size="lg" className="w-full">
-            Request Early Access
+          <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
+            {isSubmitting ? 'Submitting...' : 'Request Early Access'}
           </Button>
 
           <p className="text-xs text-center text-muted-foreground">
