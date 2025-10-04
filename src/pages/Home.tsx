@@ -64,8 +64,8 @@ export default function Home() {
           {/* Development Notice */}
           <div className="mb-6 bg-accent/50 border border-border rounded-lg p-4 max-w-lg mx-auto">
             <p className="text-sm text-foreground/80">
-              GenuVerity is currently in development. Please feel free to click around the site to see the vision, 
-              and feel free to sign up for beta access for updates.
+              <strong>Demo Mode:</strong> Try searching below to see GenuVerity's AI fact-checking in action. 
+              Sign up for beta access to get notified when we launch.
             </p>
           </div>
 
