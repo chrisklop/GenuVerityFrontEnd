@@ -98,10 +98,9 @@ export default function Home() {
           </div>
         </div>
 
-          {/* Footer */}
-          <div className="pt-8 text-sm text-muted-foreground">
-            <p>Trusted sources • Verified claims • Deeper insights</p>
-          </div>
+        {/* Footer */}
+        <div className="pt-8 text-sm text-muted-foreground">
+          <p>Trusted sources • Verified claims • Deeper insights</p>
         </div>
       </div>
     </div>
