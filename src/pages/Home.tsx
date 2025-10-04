@@ -61,14 +61,22 @@ export default function Home() {
       {/* Hero Section - Main content */}
       <div className="flex items-center justify-center min-h-screen px-4">
         <div className="w-full max-w-2xl mx-auto text-center">
-        {/* Logo Section */}
-        <div className="mb-6">
-          <img 
-            src={genuverityLogo} 
-            alt="GenuVerity - Constitutional AI Fact Checking" 
-            className="mx-auto max-w-md w-full h-auto"
-          />
-        </div>
+          {/* Development Notice */}
+          <div className="mb-6 bg-accent/50 border border-border rounded-lg p-4 max-w-lg mx-auto">
+            <p className="text-sm text-foreground/80">
+              GenuVerity is currently in development. Please feel free to click around the site to see the vision, 
+              and feel free to sign up for beta access for updates.
+            </p>
+          </div>
+
+          {/* Logo Section */}
+          <div className="mb-6">
+            <img 
+              src={genuverityLogo} 
+              alt="GenuVerity - Constitutional AI Fact Checking" 
+              className="mx-auto max-w-md w-full h-auto"
+            />
+          </div>
 
         {/* Search Section */}
         <div className="space-y-6 -mt-[180px]">
