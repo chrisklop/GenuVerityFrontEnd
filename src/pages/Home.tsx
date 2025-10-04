@@ -7,16 +7,16 @@ import { ThemeToggle } from '../components/ThemeToggle';
 import genuverityLogo from 'figma:asset/7a1c97674e5167dc2d9474d7d02423e43c5e10fe.png';
 
 const placeholderStatements = [
-  "Press 'Find the Truth' to experience the future of AI-powered fact-checking",
-  "Try AI constitutional fact-checking - enter any claim to see how we verify truth",
-  "Discover how Constitutional AI separates fact from fiction - test any statement",
-  "See the next generation of fact-checking in action - verify any claim instantly",
-  "Experience transparent, AI-driven verification - enter a statement to begin",
-  "Watch Constitutional AI fact-check claims with unprecedented accuracy",
-  "Coffee is bad for your health - press Find the Truth to see our methodology",
-  "The Great Wall of China is visible from space - test our AI fact-checker",
-  "Vaccines cause autism - see how we use evidence-based AI verification",
-  "Climate change is a hoax - experience unbiased AI-powered fact-checking"
+  "Click 'Find the Truth' to see the future of AI fact-checking in action",
+  "Experience next-generation Constitutional AI verification - click to see demo",
+  "Witness the evolution of fact-checking - press Find the Truth for preview",
+  "See how AI will revolutionize truth verification - click for live demo",
+  "Discover tomorrow's fact-checking today - press button to see results",
+  "Preview the future: AI-powered Constitutional verification - click to explore",
+  "Watch Constitutional AI transform fact-checking - press Find the Truth now",
+  "See cutting-edge AI verification in action - click for demonstration",
+  "Experience the next era of truth detection - press button for preview",
+  "Glimpse the future of Constitutional AI fact-checking - click to see demo"
 ];
 
 export default function Home() {
